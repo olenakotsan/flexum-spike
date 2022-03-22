@@ -1,0 +1,20 @@
+{
+  "name": "flexum-spike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i ./src/input.css -o ./public/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olenakotsan/flexum-spike.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olenakotsan/flexum-spike/issues"
+  },
+  "homepage": "https://github.com/olenakotsan/flexum-spike#readme"
+}
