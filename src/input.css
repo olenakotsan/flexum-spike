@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "CeraPro-Bold";
+  src: url("../public/fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../public/fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraPro-Regular";
+  src: url("../public/fonts/CeraPro-Reqular.woff2") format("woff2"),
+    url("../public/fonts/CeraPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-heading {
+  @apply font-cera-pro-bold text-lg lg:text-xl tracking-base;
+}
+
+.font-body {
+  @apply font-cera-pro-regular text-base;
+}
+
+.font-caption {
+  @apply font-cera-pro-regular text-sm;
+}

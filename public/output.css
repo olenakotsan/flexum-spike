@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -466,4 +466,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+@font-face {
+  font-family: "CeraPro-Bold";
+
+  src: url("../public/fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../public/fonts/CeraPro-Bold.woff") format("woff");
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraPro-Regular";
+
+  src: url("../public/fonts/CeraPro-Reqular.woff2") format("woff2"),
+    url("../public/fonts/CeraPro-Regular.woff") format("woff");
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+.font-heading {
+  font-family: CeraPro-Bold, sans-serif;
+  font-size: 44px;
+  line-height: 52px;
+  letter-spacing: -2px;
+}
+
+@media (min-width: 1024px) {
+  .font-heading {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+
+.font-body {
+  font-family: CeraPro-Regular, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.font-caption {
+  font-family: CeraPro-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
