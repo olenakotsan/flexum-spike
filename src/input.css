@@ -29,3 +29,7 @@
 .font-caption {
   @apply font-cera-pro-regular text-sm;
 }
+
+.container {
+  @apply w-341 xl:w-300 lg:w-256 md:w-192 sm:w-full px-8 sm:px-4;
+}

@@ -468,6 +468,53 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.text-neutrals-500 {
+  --tw-text-opacity: 1;
+  color: rgb(97 112 128 / var(--tw-text-opacity));
+}
+
 @font-face {
   font-family: "CeraPro-Bold";
 
@@ -497,7 +544,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: -2px;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1279px) {
   .font-heading {
     font-size: 64px;
     line-height: 72px;
@@ -514,4 +561,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: CeraPro-Regular, sans-serif;
   font-size: 14px;
   line-height: 20px;
+}
+
+.container {
+  width: 85.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 1439px) {
+  .container {
+    width: 75rem;
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    width: 64rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 48rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
 }

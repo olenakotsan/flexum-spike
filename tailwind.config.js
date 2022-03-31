@@ -2,10 +2,11 @@ module.exports = {
   content: ["./public/index.html"],
   theme: {
     screens: {
-      sm: "360px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      xl: { max: "1439px" },
+      lg: { max: "1279px" },
+      md: { max: "1023px" },
+      sm: { max: "767px" },
+      xs: { max: "359px" },
     },
 
     fontSize: {
@@ -60,6 +61,13 @@ module.exports = {
     },
 
     extend: {
+      spacing: {
+        341: "85.25rem",
+        300: "75rem",
+        256: "64rem",
+        192: "48rem",
+      },
+
       fontFamily: {
         "cera-pro-bold": ["CeraPro-Bold", "sans-serif"],
         "cera-pro-regular": ["CeraPro-Regular", "sans-serif"],
