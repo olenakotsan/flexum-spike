@@ -71,8 +71,25 @@
                 <input class="input" id="email" type="email" name="user_mail" value="Email">
                 <input class="input" id="company" type="text" name="user_company" value="Company">
                 <input class="input" id="info" type="text" name="user_info" value="Tell us about your project">
-            </form>
 
+                <div class="mb-1.5">
+                    <legend class="pb-2">When do you want to start?</legend>
+                    <div class="flex flex-wrap gap-x-9 text-neutrals-1000">
+                        <label>
+                            <input class="mr-[11px]" type="radio" checked name="user_time" value="Immediately">
+                            Immediately
+                        </label>
+                        <label>
+                            <input class="mr-[11px]" type="radio" name="user_time" value="1-2 months">
+                            1-2 months
+                        </label>
+                        <label>
+                            <input class="mr-[11px]" type="radio" name="user_time" value="3-6 months">
+                            3-6 months
+                        </label>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
 </body>
