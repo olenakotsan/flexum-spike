@@ -540,15 +540,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-heading {
   font-family: CeraPro-Bold, sans-serif;
-  font-size: 44px;
-  line-height: 52px;
-  letter-spacing: -2px;
+  font-size: 64px;
+  line-height: 72px;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 767px) {
   .font-heading {
-    font-size: 64px;
-    line-height: 72px;
+    font-size: 44px;
+    line-height: 52px;
   }
 }
 
@@ -562,6 +561,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: CeraPro-Regular, sans-serif;
   font-size: 14px;
   line-height: 20px;
+}
+
+.font-button {
+  font-family: CeraPro-Bold, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .container {
