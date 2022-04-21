@@ -37,3 +37,7 @@
 .container {
   @apply w-341 xl:w-300 lg:w-256 md:w-192 sm:w-full px-8 sm:px-4;
 }
+
+.input {
+  @apply border-b-[1px] border-neutrals-300 py-3.5 mb-6 w-full;
+}

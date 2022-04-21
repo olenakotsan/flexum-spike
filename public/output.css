@@ -494,6 +494,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 751px;
 }
 
+.max-w-\[560px\] {
+  max-width: 560px;
+}
+
 .items-center {
   align-items: center;
 }
@@ -527,6 +531,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-neutrals-500 {
@@ -625,7 +634,19 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
 
+.input {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 233 237 / var(--tw-border-opacity));
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+@media (max-width: 767px) {
   .sm\:block {
     display: block;
   }
