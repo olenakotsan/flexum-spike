@@ -620,12 +620,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: CeraPro-Bold, sans-serif;
   font-size: 64px;
   line-height: 72px;
+  letter-spacing: -2px;
 }
 
 @media (max-width: 767px) {
   .font-heading {
-    font-size: 44px;
-    line-height: 52px;
+    font-size: 56px;
+    line-height: 64px;
   }
 }
 

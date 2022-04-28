@@ -19,7 +19,7 @@
 }
 
 .font-heading {
-  @apply font-cera-pro-bold sm:text-lg text-xl;
+  @apply font-cera-pro-bold sm:text-lg text-xl tracking-base;
 }
 
 .font-body {
