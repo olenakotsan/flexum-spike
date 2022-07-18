@@ -651,7 +651,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 @font-face {
   font-family: "CeraPro-Regular";
 
-  src: url("../public/fonts/CeraPro-Reqular.woff2") format("woff2"),
+  src: url("../public/fonts/CeraPro-Regular.woff2") format("woff2"),
     url("../public/fonts/CeraPro-Regular.woff") format("woff");
 
   font-weight: 400;
