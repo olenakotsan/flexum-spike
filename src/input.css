@@ -39,5 +39,5 @@
 }
 
 .input {
-  @apply border-b outline-none invalid:border-error-500 placeholder-neutrals-500 py-3.5 mb-6 w-full;
+  @apply border-b outline-none focus-visible:border-primary-500 placeholder-neutrals-500 py-3.5 mb-6 w-full;
 }
