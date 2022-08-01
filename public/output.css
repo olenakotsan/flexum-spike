@@ -754,6 +754,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(33 166 139 / var(--tw-border-opacity));
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:text-neutrals-1000:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 17 17 / var(--tw-text-opacity));
+}
+
 @media (max-width: 767px) {
   .sm\:block {
     display: block;
