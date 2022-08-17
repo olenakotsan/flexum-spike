@@ -77,17 +77,21 @@
                 <div class="mb-6">
                     <legend class="pb-2 text-neutrals-500">When do you want to start?</legend>
                     <div class="flex flex-wrap gap-x-9 text-neutrals-1000">
-                        <label>
-                            <input class="mr-[11px]" type="radio" checked name="user_time" value="Immediately">
-                            Immediately
+                        <label class="label">
+                            <input class="radio-input input-checked appearance-none" type="radio" checked
+                                name="user_time" value="Immediately">
+                            <span class="radio"></span>
+                            <span>Immediately</span>
                         </label>
-                        <label>
-                            <input class="mr-[11px]" type="radio" name="user_time" value="1-2 months">
-                            1-2 months
+                        <label class="label">
+                            <input class="radio-input appearance-none" type="radio" name="user_time" value="1-2 months">
+                            <span class="radio"></span>
+                            <span>1-2 months</span>
                         </label>
-                        <label>
-                            <input class="mr-[11px]" type="radio" name="user_time" value="3-6 months">
-                            3-6 months
+                        <label class="label">
+                            <input class="radio-input appearance-none" type="radio" name="user_time" value="3-6 months">
+                            <span class="radio"></span>
+                            <span>3-6 months</span>
                         </label>
                     </div>
                 </div>
@@ -121,6 +125,17 @@
             input.addEventListener("focus", (event) => {
                 event.target.classList.remove("border-error-500");
                 event.target.classList.remove("border-neutrals-300");
+            });
+        });
+
+        const radioInputs = document.querySelectorAll(".radio-input");
+
+        radioInputs.forEach((input) => {
+            input.addEventListener('change', (event) => {
+                radioInputs.forEach((currentInput) => {
+                    currentInput.classList.remove("input-checked");
+                });
+                event.target.classList.add("input-checked");
             });
         });
     </script>
