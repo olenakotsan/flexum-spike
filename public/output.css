@@ -490,10 +490,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.mr-\[11px\] {
-  margin-right: 11px;
-}
-
 .flex {
   display: flex;
 }
@@ -508,6 +504,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[560px\] {
   max-width: 560px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .flex-wrap {
@@ -752,6 +758,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .input:focus-visible {
   --tw-border-opacity: 1;
   border-color: rgb(33 166 139 / var(--tw-border-opacity));
+}
+
+.radio {
+  margin-right: 6px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.radio-unchecked {
+  background-image: url('./radio-buttons/default-unchecked.svg');
+}
+
+.radio-unchecked:hover {
+  background-image: url('./radio-buttons/hover-unchecked.svg');
+}
+
+.radio-checked {
+  background-image: url('./radio-buttons/default-checked.svg');
+}
+
+.radio-checked:hover {
+  background-image: url('./radio-buttons/hover-checked.svg');
 }
 
 .hover\:cursor-pointer:hover {

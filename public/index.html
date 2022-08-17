@@ -77,17 +77,21 @@
                 <div class="mb-6">
                     <legend class="pb-2 text-neutrals-500">When do you want to start?</legend>
                     <div class="flex flex-wrap gap-x-9 text-neutrals-1000">
-                        <label>
-                            <input class="mr-[11px]" type="radio" checked name="user_time" value="Immediately">
-                            Immediately
+                        <label class="cursor-pointer">
+                            <input class="peer appearance-none" type="radio" checked name="user_time"
+                                value="Immediately">
+                            <span class="radio radio-checked"></span>
+                            <span>Immediately</span>
                         </label>
-                        <label>
-                            <input class="mr-[11px]" type="radio" name="user_time" value="1-2 months">
-                            1-2 months
+                        <label class="cursor-pointer">
+                            <input class="peer appearance-none" type="radio" name="user_time" value="1-2 months">
+                            <span class="radio radio-unchecked peer-checked:radio-checked"></span>
+                            <span>1-2 months</span>
                         </label>
-                        <label>
-                            <input class="mr-[11px]" type="radio" name="user_time" value="3-6 months">
-                            3-6 months
+                        <label class="cursor-pointer">
+                            <input class="peer appearance-none" type="radio" name="user_time" value="3-6 months">
+                            <span class="radio radio-unchecked peer-checked:radio-checked"></span>
+                            <span>3-6 months</span>
                         </label>
                     </div>
                 </div>

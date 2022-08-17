@@ -41,3 +41,15 @@
 .input {
   @apply border-b outline-none focus-visible:border-primary-500 placeholder-neutrals-500 py-3.5 mb-6 w-full;
 }
+
+.radio {
+  @apply inline-block align-middle w-[18px] h-[18px] mr-[6px] bg-center;
+}
+
+.radio-unchecked {
+  @apply bg-[url('./radio-buttons/default-unchecked.svg')] hover:bg-[url('./radio-buttons/hover-unchecked.svg')];
+}
+
+.radio-checked {
+  @apply bg-[url('./radio-buttons/default-checked.svg')] hover:bg-[url('./radio-buttons/hover-checked.svg')];
+}
