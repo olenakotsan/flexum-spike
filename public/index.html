@@ -69,10 +69,11 @@
             </div>
 
             <form class="font-body max-w-[560px] py-8" id="form">
-                <input class="input" id="name" type="text" name="user_name" placeholder="Name">
-                <input class="input" id="email" type="email" name="user_mail" placeholder="Email">
-                <input class="input" id="company" type="text" name="user_company" placeholder="Company">
-                <input class="input" id="info" type="text" name="user_info" placeholder="Tell us about your project">
+                <input class="input border-neutrals-300" id="name" type="text" name="user_name" placeholder="Name">
+                <input class="input border-neutrals-300" id="email" type="email" name="user_mail" placeholder="Email">
+                <input class="input border-neutrals-300" id="company" type="text" name="user_company"
+                    placeholder="Company">
+                <input class="input border-neutrals-300" id="info" type="text" name="user_info" placeholder="Tell us about your project">
 
                 <div class="mb-6">
                     <legend class="pb-2 text-neutrals-500">When do you want to start?</legend>
@@ -111,8 +112,6 @@
         const inputs = document.querySelectorAll(".input");
 
         inputs.forEach((input) => {
-            input.classList.add("border-neutrals-300");
-
             input.addEventListener("blur", (event) => {
                 if (event.target.value === "" || !event.target.checkValidity()) {
                     event.target.classList.remove("border-neutrals-300");
