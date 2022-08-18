@@ -786,9 +786,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.hover\:bg-primary-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 133 111 / var(--tw-bg-opacity));
+}
+
 .hover\:text-neutrals-1000:hover {
   --tw-text-opacity: 1;
   color: rgb(17 17 17 / var(--tw-text-opacity));
+}
+
+.active\:bg-primary-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 66 56 / var(--tw-bg-opacity));
 }
 
 @media (max-width: 767px) {
