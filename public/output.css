@@ -353,13 +353,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -490,12 +483,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-\[14px\] {
+  width: 14px;
 }
 
 .max-w-\[751px\] {
@@ -510,6 +531,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -532,6 +561,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-9 {
   -moz-column-gap: 2.25rem;
        column-gap: 2.25rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .overflow-y-auto {
@@ -565,6 +599,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-primary-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(33 166 139 / var(--tw-bg-opacity));
+}
+
+.fill-primary-500 {
+  fill: #21A68B;
 }
 
 .p-1\.5 {
@@ -610,6 +648,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -627,6 +670,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-neutrals-0 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-primary-500 {
+  --tw-text-opacity: 1;
+  color: rgb(33 166 139 / var(--tw-text-opacity));
 }
 
 .blur {
@@ -736,11 +784,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(97 112 128 / var(--tw-placeholder-opacity));
 }
 
-.input:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(97 112 128 / var(--tw-placeholder-opacity));
-}
-
 .input::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(97 112 128 / var(--tw-placeholder-opacity));
@@ -796,17 +839,66 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(17 17 17 / var(--tw-text-opacity));
 }
 
+.hover\:text-primary-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(26 133 111 / var(--tw-text-opacity));
+}
+
 .active\:bg-primary-800:active {
   --tw-bg-opacity: 1;
   background-color: rgb(13 66 56 / var(--tw-bg-opacity));
 }
 
+.group:hover .group-hover\:fill-primary-600 {
+  fill: #1A856F;
+}
+
+@media (max-width: 1279px) {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 767px) {
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:flex-col-reverse {
+    flex-direction: column-reverse;
   }
 }
