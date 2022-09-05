@@ -22,6 +22,10 @@
   @apply font-cera-pro-bold sm:text-lg text-xl tracking-base;
 }
 
+.font-subheading {
+  @apply font-cera-pro-bold text-md;
+}
+
 .font-body {
   @apply font-cera-pro-regular text-base;
 }
