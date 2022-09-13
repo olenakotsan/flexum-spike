@@ -465,9 +465,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
+.fixed {
+  position: fixed;
 }
 
 .top-0 {
@@ -479,13 +478,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mb-6 {
@@ -514,6 +517,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden {
   display: none;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-40 {
@@ -577,12 +584,8 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 1.5rem;
 }
 
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.border-b-\[1px\] {
-  border-bottom-width: 1px;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .border-b {
@@ -921,6 +924,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-screen {
+    height: 100vh;
   }
 
   .sm\:flex-col {
