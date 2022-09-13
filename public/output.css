@@ -584,10 +584,6 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 1.5rem;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -600,11 +596,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-neutrals-300 {
   --tw-border-opacity: 1;
   border-color: rgb(229 233 237 / var(--tw-border-opacity));
-}
-
-.border-error-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(211 33 75 / var(--tw-border-opacity));
 }
 
 .bg-neutrals-0 {
@@ -696,11 +687,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-primary-500 {
   --tw-text-opacity: 1;
   color: rgb(33 166 139 / var(--tw-text-opacity));
-}
-
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @font-face {
